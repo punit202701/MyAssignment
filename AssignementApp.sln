@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignementApp", "AssignementApp\AssignementApp.csproj", "{CA11E19F-C37C-420B-9352-5043EBCD6F85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignement.DTO", "Assignement.DTO\Assignement.DTO.csproj", "{13D0999A-A814-4BB3-8ABC-2382D152DCC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA11E19F-C37C-420B-9352-5043EBCD6F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA11E19F-C37C-420B-9352-5043EBCD6F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA11E19F-C37C-420B-9352-5043EBCD6F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA11E19F-C37C-420B-9352-5043EBCD6F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D0999A-A814-4BB3-8ABC-2382D152DCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D0999A-A814-4BB3-8ABC-2382D152DCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D0999A-A814-4BB3-8ABC-2382D152DCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D0999A-A814-4BB3-8ABC-2382D152DCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3754295-5200-41C6-AD32-2B733872E753}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/pnp20270
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Assignement.DTO\\Assignement.DTO.csproj
+		SccProjectName1 = Assignement.DTO
+		SccLocalPath1 = Assignement.DTO
+		SccProjectUniqueName2 = AssignementApp\\AssignementApp.csproj
+		SccProjectName2 = AssignementApp
+		SccLocalPath2 = AssignementApp
+	EndGlobalSection
+EndGlobal

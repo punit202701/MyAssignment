@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "UnAuthorisedUser";
+}
+
+<h2>Unauthorized user!!</h2>
+@using (Html.BeginForm())
+{
+    @Html.ActionLink("Back to login","Login","Home")
+}

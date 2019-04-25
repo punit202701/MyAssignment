@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "SuccessPage";
+}
+
+<h2>Successfully Logged in</h2>
+@using (Html.BeginForm())
+{
+    @Html.ActionLink("Back to login", "Login", "Home")
+}
+

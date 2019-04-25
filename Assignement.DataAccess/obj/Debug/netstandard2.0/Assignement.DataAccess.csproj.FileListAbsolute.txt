@@ -1,0 +1,12 @@
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\bin\Debug\netstandard2.0\Assignement.DataAccess.deps.json
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\bin\Debug\netstandard2.0\Assignement.DataAccess.dll
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\bin\Debug\netstandard2.0\Assignement.DataAccess.pdb
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\bin\Debug\netstandard2.0\Assignement.DTO.dll
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\bin\Debug\netstandard2.0\Assignement.DTO.pdb
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.csprojAssemblyReference.cache
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.csproj.CoreCompileInputs.cache
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.AssemblyInfoInputs.cache
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.AssemblyInfo.cs
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.csproj.CopyComplete
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.dll
+D:\Punit\MyApps\Assignement_harman\AssignementApp\Assignement.DataAccess\obj\Debug\netstandard2.0\Assignement.DataAccess.pdb

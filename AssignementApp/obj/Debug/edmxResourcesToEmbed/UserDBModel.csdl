@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Harman.AssignmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RoleDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tblUserXRoles" Relationship="Self.FK_Roles_RoleID_UserRole" FromRole="tblRoles" ToRole="tblUserXRole" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblUserXRoles" Relationship="Self.FK_User_UserID_UserRole" FromRole="tblUser" ToRole="tblUserXRole" />
+  </EntityType>
+  <EntityType Name="tblUserXRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="RoleID" Type="Int32" />
+    <NavigationProperty Name="tblRole" Relationship="Self.FK_Roles_RoleID_UserRole" FromRole="tblUserXRole" ToRole="tblRoles" />
+    <NavigationProperty Name="tblUser" Relationship="Self.FK_User_UserID_UserRole" FromRole="tblUserXRole" ToRole="tblUser" />
+  </EntityType>
+  <Association Name="FK_Roles_RoleID_UserRole">
+    <End Role="tblRoles" Type="Self.tblRole" Multiplicity="0..1" />
+    <End Role="tblUserXRole" Type="Self.tblUserXRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRoles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblUserXRole">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserID_UserRole">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="0..1" />
+    <End Role="tblUserXRole" Type="Self.tblUserXRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblUserXRole">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AssignmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblRoles" EntityType="Self.tblRole" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+    <EntitySet Name="tblUserXRoles" EntityType="Self.tblUserXRole" />
+    <AssociationSet Name="FK_Roles_RoleID_UserRole" Association="Self.FK_Roles_RoleID_UserRole">
+      <End Role="tblRoles" EntitySet="tblRoles" />
+      <End Role="tblUserXRole" EntitySet="tblUserXRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserID_UserRole" Association="Self.FK_User_UserID_UserRole">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblUserXRole" EntitySet="tblUserXRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
